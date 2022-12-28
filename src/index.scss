@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Familjen Grotesk', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+/* Header/Navbar */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100px;
+  padding: 0 30px;
+}
+
+/* Logo */
+.logo{
+  width: 210px;
+  height: auto;
+
+  img{
+    width: 100%;
+    display: block;
+    height:auto;
+  }
+}
+
+/*Desktop Menu*/
+.desktop-main-menu{
+  margin-right: 50px;
+
+  ul{
+    display: flex;
+
+    li{
+      position: relative;
+      margin-right: 20px;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+/*Menu item bottom border*/
+.desktop-main-menu ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
+  transform-origin: right center;
+}
+
+.desktop-main-menu ul li a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.5s;
+}
+
+/*Sections*/
+section{
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+.section-inner{
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  min-width: 560px;
+
+  h4{
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+/*BackGround images*/
+.section-a{
+  background-image: url('./img/section-a.webp');
+}
+
+.btn{
+  position:relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s ease-in-out;
+
+
+  &:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+}
