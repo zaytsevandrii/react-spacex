@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
+import Hamburger from "../components/Hamburger"
 import Header from "../components/Header"
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
                         <path
                             stroke="#ffffff"
                             fill="none"
-                            stroke-width="2px"
+                            strokeWidth="2px"
                             d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
                         ></path>
                     </svg>
@@ -44,7 +45,7 @@ const Home = () => {
                         <path
                             stroke="#ffffff"
                             fill="none"
-                            stroke-width="2px"
+                            strokeWidth="2px"
                             d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
                         ></path>
                     </svg>
@@ -66,7 +67,7 @@ const Home = () => {
                         <path
                             stroke="#ffffff"
                             fill="none"
-                            stroke-width="2px"
+                            strokeWidth="2px"
                             d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
                         ></path>
                     </svg>
@@ -88,7 +89,7 @@ const Home = () => {
                         <path
                             stroke="#ffffff"
                             fill="none"
-                            stroke-width="2px"
+                            strokeWidth="2px"
                             d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
                         ></path>
                     </svg>
@@ -109,7 +110,7 @@ const Home = () => {
                         <path
                             stroke="#ffffff"
                             fill="none"
-                            stroke-width="2px"
+                            strokeWidth="2px"
                             d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
                         ></path>
                     </svg>
@@ -126,7 +127,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
