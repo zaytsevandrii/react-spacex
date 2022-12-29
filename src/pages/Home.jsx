@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <section className="section-a">
+            <section className="section-a section-animate">
                 <div className="section-inner">
                     <h4>Upcoming Launch</h4>
                     <h2>CRS-25 Mission</h2>
@@ -30,7 +30,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Section B */}
-            <section className="section-b">
+            <section className="section-b ">
                 <div className="section-inner">
                     <h4>Recent Launch</h4>
                     <h2>Starlink Mission</h2>
